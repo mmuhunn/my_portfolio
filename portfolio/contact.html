@@ -105,6 +105,82 @@
         button:hover {
             background-color: #b22222;
         }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+                font-size: 0.95em;
+            }
+
+            .pageBar ul {
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+
+            .pageBar li a {
+                font-size: 0.85em;
+                padding: 5px 10px;
+            }
+
+            img {
+                float: none;
+                display: block;
+                margin: 0 auto 20px;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .skill-card,
+            .project-card {
+                font-size: 0.95em;
+                padding: 15px;
+            }
+
+            form input,
+            form textarea {
+                font-size: 0.95em;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            .pageBar ul {
+                gap: 15px;
+            }
+
+            .pageBar li a {
+                font-size: 0.95em;
+                padding: 6px 12px;
+            }
+
+            .skill-card,
+            .project-card {
+                font-size: 1em;
+                padding: 18px;
+            }
+
+            form input,
+            form textarea {
+                font-size: 1em;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+}
     </style>
 </head>
 <body>
