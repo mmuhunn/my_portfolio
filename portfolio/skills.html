@@ -13,6 +13,7 @@
     .skill-title {
       margin-bottom: 5px;
       font-weight: 600;
+      font-size: 1em;
     }
 
     .progress-bar {
@@ -21,7 +22,8 @@
       border-radius: 20px;
       overflow: hidden;
       margin-bottom: 20px;
-      height: 18px;
+      height: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .progress {
@@ -29,7 +31,18 @@
       background-color: #e2915b;
       width: 0;
       border-radius: 20px;
-      transition: width 0.8s ease-in-out;
+      transition: width 0.8s ease;
+    }
+
+    /* 퍼센트는 style로 직접 설정 */
+
+    .progress-bar:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .progress-bar:hover .progress {
+      background-color: #d26c22;
     }
   </style>
 </head>
@@ -46,23 +59,35 @@
 
     <h2>Skill Proficiency</h2>
     <div class="skill-meter">
-      <div class="skill-title">🧠 Natural Language Processing (Beginner)</div>
-      <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+      <div class="skill-title">🐍 Python</div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 70%;"></div>
+      </div>
 
-      <div class="skill-title">🕵️ Web Scraping (Beginner)</div>
-      <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+      <div class="skill-title">🗃️ SQL</div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 65%;"></div>
+      </div>
 
-      <div class="skill-title">🐍 Python (Intermediate)</div>
-      <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+      <div class="skill-title">🧠 Natural Language Processing (NLP)</div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 30%;"></div>
+      </div>
 
-      <div class="skill-title">🗃️ SQL (Intermediate)</div>
-      <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+      <div class="skill-title">🕵️ Web Scraping</div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 30%;"></div>
+      </div>
 
-      <div class="skill-title">🔎 RAG / LLM (Beginner)</div>
-      <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+      <div class="skill-title">🔎 RAG / LLM</div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 30%;"></div>
+      </div>
 
-      <div class="skill-title">📝 Prompt Engineering (Beginner)</div>
-      <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+      <div class="skill-title">📝 Prompt Engineering</div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 30%;"></div>
+      </div>
     </div>
   </div>
 </body>
