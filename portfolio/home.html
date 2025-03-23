@@ -8,17 +8,21 @@
         body{
             font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 40px auto;
-            max-width: 800px;
-            line-height: 1.6;
-            color: #333;
-            background-color: rgba(222, 215, 193, 0.815);
+            max-width: 900px;
+            line-height: 1.7;
+            color: #2e2e2e;
+            background-color: #f4f4f4;
             padding: 0 20px;
         }
         h1{
-            color: rgb(233, 99, 36);
+            color: #b2b2b2;
             text-align: center;
-            font-size: 2.5em;
+            font-size: 2.8em;
             margin-bottom: 30px;
+        }
+        h2{
+            color: #444;
+            margin-top: 40px;
         }
         img {
             float: right;
@@ -26,20 +30,83 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        
-    </style>
+        .pageBar {
+            background-color: #800000; /* Dark Red */
+            border-radius: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        .pageBar ul{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            list-style: none;
+            padding: 15px 0;
+            background-color: sandybrown;
+        }
+        .pageBar li a{
+            text-decoration: none;
+            color: #fefefe;
+            font-weight: 600;
+            padding: 8px 14px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        .projects-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .pageBar li a:hover,
+        .pageBar li a:focus {
+        background-color: #b22222;
+        color: #ffffff;
+        }
+
+        .pageBar li a.active {
+        background-color: #b22222;
+        color: white;
+        }
+
+        p {
+        font-size: 1.05em;
+        }
+
+        @media (max-width: 600px) {
+        img {
+            float: none;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        .pageBar ul {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+  </style>
 </head>
 <body>
-    
-    <h1> DAEHUN's PROTFOLIO!😎</h1>
-    <img src="InLiverpool.jpg" alt="MyPhoto" width="150">
-    <br>
-    <h2>About Me</h2>
-    <p>
+  <nav class="pageBar">
+    <ul>
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>DAEHUN's PORTFOLIO! 😎</h1>
+  <img src="InLiverpool.jpg" alt="MyPhoto" width="160" />
+
+  <h2>About Me</h2>
+  <p>
     I'm currently a third-year student majoring in Information Technology Management (ITM) at Seoul National University of Science and Technology. 
     I'm also participating in a dual degree program with Northumbria University in the UK. 
     As an undergraduate researcher at the BIGBASE Lab, I explore data analysis and natural language processing. 
     In addition, I serve as the current president of Coala (코딩을 알려달라), a student-led coding club dedicated to helping peers learn programming in a supportive community.
-    </p>
+  </p>
 </body>
 </html>
