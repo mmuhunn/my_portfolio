@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .pageBar {
+            background-color: #800000; 
+            border-radius: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        .pageBar ul{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            list-style: none;
+            padding: 15px 0;
+            background-color: sandybrown;
+        }
+        .pageBar li a{
+            text-decoration: none;
+            color: #fefefe;
+            font-weight: 600;
+            padding: 8px 14px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        .projects-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .pageBar li a:hover,
+        .pageBar li a:focus {
+        background-color: #b22222;
+        color: #ffffff;
+        }
+
+        .pageBar li a.active {
+        background-color: #b22222;
+        color: white;
+        }
+
+    </style>
 </head>
 <body>
+    <nav class="pageBar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="projects.html" >Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
     
 </body>
 </html>
