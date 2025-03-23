@@ -76,30 +76,30 @@ img {
 .project-card p {
   margin: 10px 0 0;
 }
-
-
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin: 20px 0 40px;
+.skill-meter {
+  margin-top: 40px;
 }
-.skill-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-  font-size: 1.05em;
+
+.skill-title {
+  margin-bottom: 5px;
   font-weight: 600;
-  color: #333;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border-left: 6px solid #b22222;
 }
-.skill-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
-  background-color: #fef6f4;
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  height: 18px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #b22222;
+  width: 0;
+  border-radius: 20px;
+  transition: width 0.8s ease-in-out;
 }
 
 
