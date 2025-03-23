@@ -1,0 +1,176 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+
+.pageBar {
+  background-color: #800000;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.pageBar ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  padding: 15px 0;
+  background-color: sandybrown;
+}
+.pageBar li a {
+  text-decoration: none;
+  color: #fefefe;
+  font-weight: 600;
+  padding: 8px 14px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+.pageBar li a:hover,
+.pageBar li a:focus {
+  background-color: #b22222;
+  color: #ffffff;
+}
+.pageBar li a.active {
+  background-color: #b22222;
+  color: white;
+}
+
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+.project-card {
+  background-color: #ffffff;
+  border-left: 6px solid #b22222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card h3 {
+  margin-top: 0;
+  color: #800000;
+}
+.project-card p {
+  margin: 10px 0 0;
+}
+
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 20px 0 40px;
+}
+.skill-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 6px solid #b22222;
+}
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  background-color: #fef6f4;
+}
+
+
+.contact-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1.05em;
+}
+.contact-info span {
+  font-weight: bold;
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  font-size: 1em;
+}
+button {
+  margin-top: 15px;
+  background-color: #800000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  background-color: #b22222;
+}
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95em;
+    padding: 10px;
+  }
+  .pageBar ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .pageBar li a {
+    font-size: 0.85em;
+    padding: 5px 10px;
+  }
+  .skill-card, .project-card {
+    font-size: 0.9em;
+    padding: 15px;
+  }
+  form input, form textarea {
+    font-size: 0.95em;
+  }
+}
